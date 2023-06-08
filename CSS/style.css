@@ -30,7 +30,7 @@ h1{
   font-family: ¨Mifuente¨, italic;
   font-style: italic;
   font-weight: bold;
-  color: #1476e6;
+  color: #002f6400;
   font-size: 80px;
   background-color: hsl(123, 80%, 49%);
   display: inline-flex;
@@ -122,8 +122,8 @@ text-decoration: none; /* Eliminar subrayado de los enlaces */
 
 .fotologo {
   
-    width: 299px; /* Ancho deseado para el logotipo */
-    margin-right: 10px; /* Espaciado derecho entre el logotipo y los elementos de navegación */
-    padding: 0px; /* Espaciado interno del logotipo */
+    width: 299px;
+    margin-right: 10px; 
+    padding: 0px; 
   }
   
