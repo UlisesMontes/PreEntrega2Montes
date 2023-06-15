@@ -68,6 +68,7 @@ header {
   background-color: rgba(30, 114, 224, 0.8352941176);
   color: #1476e6;
   padding: 0px;
+  background: linear-gradient(to top, rgba(30, 114, 224, 0.8352941176), #1410e3);
 }
 
 nav ul {
