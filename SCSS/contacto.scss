@@ -1,9 +1,7 @@
-// Variables
 $primary-color: #4CAF50;
 $secondary-color: #555;
 $font-family: Arial, sans-serif;
 
-// Mixins
 @mixin box-shadow($color) {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -76,6 +74,12 @@ img {
 
 .btn {
   @include button($primary-color);
+}
+
+.btn:hover{
+  background-color: #1410e3;
+  background-color: $primary-color;
+  background: linear-gradient(to top, $primary-color , #00ff51) 
 }
 
 p {

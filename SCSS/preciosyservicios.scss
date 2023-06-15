@@ -53,11 +53,14 @@ h1 {
 h2 {
   @include font-style('Arial', normal, bolder, $secondary-color);
   font-variant: small-caps;
-  background-color: #ffffffc2;
+  background-color: #1e72e0d5;
   background-blend-mode: luminosity;
   text-align: center;
   font-size: 32px;
   padding: 20px;
+  background: linear-gradient(to bottom, #1e72e0f1, #afafb3b7);
+  
+
 }
 
 span {
@@ -72,6 +75,10 @@ h3 {
 
 .card {
   @include box-style;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 
 
@@ -80,6 +87,7 @@ header {
   color: $secondary-color;
   padding: 1px;
   background: linear-gradient(to top, #1e72e0d5, #1410e3);
+
 }
 
 ul {

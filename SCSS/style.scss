@@ -81,7 +81,14 @@ img {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0 ease;
+
 }
+.btn:hover {
+    background-color: #1410e3;
+  background-color: $primary-color;
+    background: linear-gradient(to top, $primary-color , #00ff51) ;
+  }
 
 p {
   display: flex;
@@ -89,7 +96,11 @@ p {
 
 
 .card {
-  @include box-style;
+  @include box-style; 
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 
 @font-face {

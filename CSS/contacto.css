@@ -56,6 +56,12 @@ img {
   text-decoration: none;
 }
 
+.btn:hover {
+  background-color: #1410e3;
+  background-color: #4CAF50;
+  background: linear-gradient(to top, #4CAF50, #00ff51);
+}
+
 p {
   display: flex;
 }
