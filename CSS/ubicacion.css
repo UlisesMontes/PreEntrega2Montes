@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   color: #333;
   background-color: #f7f7f7;
-  margin: 0%;
+  margin: 0;
   padding: 0;
   background-image: url(../Imagenes/IMG-20221222-WA0052.jpg);
   background-size: contain;
@@ -53,7 +53,7 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.662745098);
-  padding: 0%;
+  padding: 0;
   margin: 8%;
   padding: 1% 1%;
   border: #333;
@@ -66,7 +66,7 @@ address {
 
 header {
   background-color: rgba(30, 114, 224, 0.8352941176);
-  color: #333;
+  color: #1476e6;
   padding: 0px;
 }
 

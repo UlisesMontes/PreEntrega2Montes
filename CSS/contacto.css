@@ -77,26 +77,23 @@ form {
   align-items: center;
   margin-top: 20px;
 }
-
 form label {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
 form input,
 form textarea {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
 }
-
 form textarea {
   resize: vertical;
 }
 
 header {
   background-color: rgba(30, 114, 224, 0.8352941176);
-  color: #333;
+  color: #555;
   padding: 1px;
 }
 
@@ -105,13 +102,11 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav ul li {
   display: inline;
   margin-right: 10px;
   margin-left: 10px;
 }
-
 nav ul li a {
   color: #fff;
   text-decoration: none;

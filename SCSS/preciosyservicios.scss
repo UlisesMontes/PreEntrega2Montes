@@ -1,109 +1,105 @@
+$primary-color: #1476e6;
+$secondary-color: #333;
+$background-color: #f7f7f7;
+$font-size: 10px;
+
+
+@mixin box-style {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffffffa9;
+  border: #333;
+  border-radius: 25%;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+@mixin font-style($font-family, $font-style, $font-weight, $color) {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
-    margin: 0%;
-    padding:0;
-    background-image: url(../Imagenes/IMG-20221222-WA0052.jpg); 
-    background-size: contain; 
-    background-repeat: repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-position-y: inherit;
-  }
-  
-    
-    h1{
-      font-family: ¨Mifuente¨, italic;
-      font-style: italic;
-      font-weight: bold;
-      color: #1476e6;
-      font-size: 80px;
-      background-color: hsl(123, 80%, 49%);
-      display: inline-flex;
-      border: double;
-      border-style: double;
-     margin: 10px;
-     padding: 10px;
-     
-    }
-  
-  span {
-    display: inline-block;
-    font-size: 30px;
-  }
-  
-  
-    
-  @font-face {
-    font-family: 'MiFuente';
-    src: url('../Fuentes/roman_vibes/Roman\ Vibes\ demo.ttf');
-  }
-  
-  h3 {
-      font-weight: bold;
-      color: #555;
-    }
-  h2{
-      font-weight: bolder ;
-      color: #333;
-      font-style: normal;
-      font-variant: small-caps;
-      background-color: #ffffffc2;
-      background-blend-mode: luminosity;
-      text-align: center;
-      font-size: 32px;
-      padding: 20px;
-      
-  
-      
-  
-    }
-   
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      border-radius: 5px;
-      background-color: #ffffffa9;
-      border: #333;
-      border-radius: 25%;
-      padding: 16px;
-      margin-bottom: 16px;
-      margin-right: 40px;
-      margin-left: 40px;
-      text-align: center;
-    }
-  
-    /* Estilos para el menú */
-  header {
-    background-color: #1e72e0d5; /* Color de fondo del encabezado */
-    color: #333; /* Color del texto en el encabezado */
-    padding: 1px; /* Espaciado interno del encabezado */
-  
-  }
-  
-  ul {
-    list-style-type: none; /* Eliminar los puntos de la lista */
-    margin: 0; /* Eliminar el margen externo de la lista */
-    padding: 0; /* Eliminar el margen interno de la lista */
-  }
-  
-  nav ul li {
-    display: inline; /* Mostrar los elementos de la lista en línea */
-    margin-right: 10px; /* Espaciado derecho entre elementos de lista */
-    margin-left: 10px; /* Espaciado entre elementos de lista*/
-   
-    
-  }
-  
-  nav ul li a {
-    color: #fff; /* Color del texto en los enlaces del menú */
-    text-decoration: none; /* Eliminar subrayado de los enlaces */
-  }
-  
-  
-  .navbar-brand {
-    width: 200px;
-    margin-right: 10px; 
-    padding: 0px 12px; 
-  }
-  
+  font-family: Arial, sans-serif;
+  color: $secondary-color;
+  background-color: $background-color;
+  margin: 0%;
+  padding: 0;
+  background-image: url(../Imagenes/IMG-20221222-WA0052.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-position-y: inherit;
+}
+
+h1 {
+  @include font-style('MiFuente', italic, bold, $primary-color);
+  font-size: 80px;
+  background-color: hsl(123, 80%, 49%);
+  display: inline-flex;
+  border: double;
+  border-style: double;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2 {
+  @include font-style('Arial', normal, bolder, $secondary-color);
+  font-variant: small-caps;
+  background-color: #ffffffc2;
+  background-blend-mode: luminosity;
+  text-align: center;
+  font-size: 32px;
+  padding: 20px;
+}
+
+span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: bold;
+  color: $secondary-color;
+}
+
+.card {
+  @include box-style;
+}
+
+
+header {
+  background-color: #1e72e0d5;
+  color: $secondary-color;
+  padding: 1px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  width: 200px;
+  margin-right: 10px;
+  padding: 0px 12px;
+}

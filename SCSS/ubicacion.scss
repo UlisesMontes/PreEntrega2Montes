@@ -1,98 +1,110 @@
+// Variables
+$primary-color: #1476e6;
+$secondary-color: #555;
+$background-color: #f7f7f7;
+$box-shadow-color: rgba(0, 0, 0, 0.2);
+$card-background-color: #ffffffa9;
+$nav-background-color: #1e72e0d5;
+$footer-background-color: #1e72e0d5;
+
+// Mixins
+@mixin card-styles {
+  box-shadow: 0 4px 8px 0 $box-shadow-color;
+  border-radius: 5px;
+  background-color: $card-background-color;
+  padding: 0;
+  margin: 8%;
+  padding: 1% 1%;
+  border: #333;
+  border-radius: 2%;
+}
+
+// Styles
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
-    margin: 0%;
-    padding: 0;
-    background-image: url(../Imagenes/IMG-20221222-WA0052.jpg); 
-    background-size: contain; 
-    background-repeat: repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-position-y: inherit;
-    
-  }
-  
-  h2 {
-    font-weight: bold;
-    font-style: normal;
-    color: #555;
-    text-align: center;
-  }
-  
-  h1 {
-    font-family: 'Mifuente', italic;
-    font-style: italic;
-    font-weight: bold;
-    color: #1476e6;
-    font-size: 80px;
-    background-color: hsl(123, 80%, 49%);
-    display: inline-flex;
-    border: double;
-    border-style: double;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  span {
-    display: inline-block;
-    font-size: 30px;
-  }
-  
-  img {
-    width: auto;
-    height: 200px;
-    border-radius: 4%;
-    background-repeat: repeat;
-  }
-  
-  p {
-    display: flex;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
-    background-color: #ffffffa9;
-    padding: 0%;
-    margin: 8%;
-    padding: 1% 1%;
-    border: #333;
-    border-radius: 2%;
-  }
-  
-  address {
-    margin: 10px 0;
-  }
-  
-  header {
-    background-color: #1e72e0d5; 
-    color: #333;
-    padding: 0px; 
-  }
-  
-  nav ul {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Imagenes/IMG-20221222-WA0052.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-position-y: inherit;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: normal;
+  color: $secondary-color;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Mifuente', italic;
+  font-style: italic;
+  font-weight: bold;
+  color: $primary-color;
+  font-size: 80px;
+  background-color: hsl(123, 80%, 49%);
+  display: inline-flex;
+  border: double;
+  border-style: double;
+  margin: 10px;
+  padding: 10px;
+}
+
+span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+img {
+  width: auto;
+  height: 200px;
+  border-radius: 4%;
+  background-repeat: repeat;
+}
+
+p {
+  display: flex;
+}
+
+.card {
+  @include card-styles;
+}
+
+address {
+  margin: 10px 0;
+}
+
+header {
+  background-color: $nav-background-color;
+  color: $primary-color;
+  padding: 0px;
+}
+
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
   display: inline;
   margin-left: 10px;
-  margin-right:10px ; 
-  }
-  
-  nav ul li a {
+  margin-right: 10px;
+}
+
+nav ul li a {
   color: #fff;
-  text-decoration: none; 
-  }
-  
-  footer {
-  background-color: #1e72e0d5;
+  text-decoration: none;
+}
+
+footer {
+  background-color: $footer-background-color;
   color: #fff;
   padding: 10px;
   text-align: center;
-  }
-    
-  
+}
